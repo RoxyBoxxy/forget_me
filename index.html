@@ -66,7 +66,8 @@
 <body>
 	<div class="statictop">
 		<header>
-			<input type="text" placeholder="Name" class="nameinput"/> Status: <span class="status">Loading</span> Encription: <span class="status1"> Checking:</span>
+			<input type="text" placeholder="Name" class="nameinput"/> Status: 
+			  <span class="status">Loading</span> Encription: <span class="status1"> Checking:</span>
 		</header>
 	</div>
 	<div class="container">
@@ -120,7 +121,9 @@
 
 	function message (data) {
 		console.log(data);
-		$('.messages').append('<div class="message-block"><div class="avatar">' + data['message']['name'] + '</div><div class="message">' + data['message']['message'] + '</div>	<div style="clear:both;"></div></div>');
+		$('.messages').append('<div class="message-block"><div class="avatar">' + 
+		  data['message']['name'] + '</div><div class="message">' + data['message']['message'] + 
+		  '</div>	<div style="clear:both;"></div></div>');
 
 		window.scrollTo(0,document.body.scrollHeight);
 	}
