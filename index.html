@@ -98,7 +98,7 @@ a.btn{position:absolute;z-index:999999999999;white-space:nowrap;outline:0;text-d
 	<div class="statictop">
 		<header>
 			<input type="text" placeholder="Name" class="nameinput"/> Status: 
-			  <span class="status">Loading</span> Connected IP:<span class="status5"><script language="JavaScript">
+			  <span class="status">Loading</span> Connected IP:<span class="status1"><script language="JavaScript">
 VIH_BackColor = "#222";
 VIH_ForeColor = "Green";
 VIH_FontPix = "16";
@@ -145,7 +145,7 @@ document.head.appendChild(fhs);document.write("<span id='o_"+fhs_id+"'></span>")
 	
 		socket.on('connect', function () {
 		console.log('connected');
-		$('.status1').html('Not available');
+		$('.status1').html('%%IP%%');
 		$('.status1').addClass('connectednt');
 		$('.status1').removeClass('connecting');
 	});
