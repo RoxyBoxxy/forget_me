@@ -95,11 +95,12 @@
 <body>
 	<div class="statictop">
 		<header>
-			<input type="text" placeholder="Name" class="nameinput"/> Status: 
-			  <span class="status">Loading..</span> Tor Status: <span class="status1">Checking..</span>
-</span></span><span class="status2">
+			<input type="text" placeholder="Name" class="nameinput"/> 
+			Status: <span class="status">Loading..</span>
+			Tor Status: <span class="status1">Checking..</span>
+			Network Speed <span class="status2">Pinging..</span>
 
-</span>
+
 		</header>
 	</div>
 	<div class="container">
@@ -138,6 +139,13 @@
 		$('.status1').addClass('connectednt');
 		$('.status1').removeClass('connecting');
 	});
+		socket.on('connect', function () {
+		console.log('connected');
+		$('.status2').html('Good');
+		$('.status2').addClass('connected');
+		$('.status2').removeClass('connecting');
+	});
+
 
 	socket.on('message', message);
 	socket.on('servermessage', servermessage);
