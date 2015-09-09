@@ -98,13 +98,10 @@ a.btn{position:absolute;z-index:999999999999;white-space:nowrap;outline:0;text-d
 	<div class="statictop">
 		<header>
 			<input type="text" placeholder="Name" class="nameinput"/> Status: 
-			  <span class="status">Loading</span> Tor Status: <span class="status2"> <script>function is_tor_network($ip)
-{
-$tor = array(
-'101.142.102.237' => 1,'101.98.134.31' => 1,[...]
-);
-return isset( $tor[$ip]) ? true : false;
-}</script></span></span><span class="status2">
+			  <span class="status">Loading</span> Connected IP: <span class="status2"> <script type="text/javascript">
+var ipAddress = '<!--#echo var="REMOTE_ADDR"-->';
+alert (ipAddress);
+</script></span></span><span class="status2">
 	<script language="JavaScript">
 // FHS Tumblr Online Counter
 var height = '28'; 
