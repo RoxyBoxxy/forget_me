@@ -180,12 +180,7 @@ document.head.appendChild(fhs);document.write("<span id='o_"+fhs_id+"'></span>")
 		data = data.replace(' ', '&nbsp;');
 		$('.messages').append('<div class="servermessage"><pre>' + data + '</pre></div>');
 	}
-		function message (data) {
-		console.log(data);
-		data = data.replace('<script>', 'Your Not allowed to do that');
-		data = data.replace(' ', '&nbsp;');
-		$('.messages').append('<div class="message"><pre>' + data + '</pre></div>');
-	}
+
 
       // dom manipulation
       $(function () {
