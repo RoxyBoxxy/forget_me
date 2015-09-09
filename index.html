@@ -33,6 +33,7 @@
 	}
 	.status1.connectednt {	color:red; }
 	.status.connected {	color:#0a0; }
+	.status2.connected {	color:#0a0; }
 	.status.connecting { color:orange; }
 
 	.container {
@@ -98,7 +99,7 @@
 			<input type="text" placeholder="Name" class="nameinput"/> 
 			Status: <span class="status">Loading..</span>
 			Tor Status: <span class="status1">Checking..</span>
-			Network Speed <span class="status2">Pinging..</span>
+			Network Speed: <span class="status2">Pinging..</span>
 
 
 		</header>
@@ -127,11 +128,6 @@
 		$('.status').html('Connected');
 		$('.status').addClass('connected');
 		$('.status').removeClass('connecting');
-	});
-		socket.on('connecting', function () {
-		console.log('connecting');
-		$('.status1').html('Looking..');
-		$('.status1').addClass('connecting');
 	});
 		socket.on('connect', function () {
 		console.log('connected');
