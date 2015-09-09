@@ -4,6 +4,14 @@
 	<title>Forget Me</title>
 	<script src="/socket.io/socket.io.js"></script>
 	<script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+	<script language="JavaScript">
+                 PLT_DisplayFormat = "%%S%% seconds to load.";
+                 PLT_BackColor = "palegreen";
+                 PLT_ForeColor = "navy";
+                 PLT_FontPix = "12";
+                 PLT_DisplayElementID = "display_here";
+        </script>
+        <script language="JavaScript" src="http://www.hashemian.com/js/PageLoadTime.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Droid+Sans">
 <script>function clearBox(elementID)
 {
@@ -99,7 +107,7 @@
 			<input type="text" placeholder="Name" class="nameinput"/> 
 			Status: <span class="status">Loading..</span>
 			Tor Status: <span class="status1">Checking..</span>
-			Network Speed: <span class="status2">Pinging..</span>
+			Network Speed: <span class="display_here"></span>
 
 
 		</header>
